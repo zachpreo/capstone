@@ -2,15 +2,28 @@
 
 /* Universal CSS Rules */
 
+html {
+  font-size: 18px;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
 
 /* Navigation Bar */
 
 header {
   display: flex;
-  height: 64px;
+  height: 24px;
   align-items: center;
   width: 100%;
-  background-color: #A3BCF9;
+  background-color: white;
 }
 
 .logo {
@@ -59,4 +72,81 @@ nav a:hover {
 nav {display: none;}
 .mobile-header {display: flex; width: 100%; justify-content: space-around;}
 .mobile-header img {height: 60px; width: 45px;}
+}
+
+/* Main Banner */
+
+.main-banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #A3BCF9;
+  color: white;
+}
+
+.banner-image {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.main-banner h1 {
+  font-size: 4rem;
+}
+
+.banner-text p {
+  font-size: 2.2rem;
+}
+
+.banner-text .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5C80BC;
+  min-height: 5rem;
+  min-width: 36rem;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+
+/* Practice Section */
+
+.practice {
+  display: flex;
+  align-items: center;
+}
+/*
+.practice-primary {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 60%;
+}
+*/
+.practice-secondary {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 40%;
 }
